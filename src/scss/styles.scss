@@ -1,0 +1,117 @@
+/* Color Theme Swatches in Hex */
+$color-1: hsl(90, 3%, 85%);
+$color-2: #F2F2EB;
+$color-3: #26261C;
+$color-4: #737166;
+$color-5: #A6A397;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
+    color: $color-3;
+    background: $color-2;
+    height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Hammersmith One', sans-serif;
+  }
+
+/* The navigation bar */
+nav {
+    overflow: hidden;
+    background-color: white;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    box-shadow: 0px 16px 16px 0px rgba($color-3, 0.03);
+    border-bottom: 1px solid $color-4;
+    z-index: 10000;
+    display: flex;
+
+    a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      a:hover {
+        background: #ddd;
+        color: black;
+      }
+
+      .logo {
+          height: 5em;
+          margin-left: 1em;
+      }
+  }
+
+  .search-box {
+    margin-left: auto;
+    display: flex;
+    height: 2em;
+    flex: 1;
+    padding-left: 6em;
+    padding-right: 1em;
+    
+    .search-input {
+        width: 100%;        
+    }
+
+    .search-result-box {        
+        display: block;
+        position: fixed;
+        top: 3em;
+
+        .search-result-item {
+            background-color: white;
+            border:  1px solid black;
+            padding: 1em;
+        }
+    }
+  }
+  
+  form {
+      width: 100%;
+  }
+.page-box {
+    padding: 7em 1em 0 1em;
+}
+
+.product-grid {
+    margin-top: 1em;
+    display: grid;
+    grid-gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-flow: dense;
+}
+
+.product-box {
+    background-color: white;
+    display: inline-flexbox;
+    margin-bottom: 1em;
+    border-radius: 0.2em;
+    padding: 1em;
+    box-shadow: 0px 4px 4px 0px rgba($color-3, 0.05);
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid $color-5;
+
+    &:hover {
+        box-shadow: 0px 4px 4px 0px rgba($color-3, 0.25);
+    }
+}
+
+.hidden {
+    display: none;
+}
