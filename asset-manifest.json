@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/jungle-app/static/css/main.c40e22c2.chunk.css",
+    "main.js": "/jungle-app/static/js/main.3135521a.chunk.js",
+    "main.js.map": "/jungle-app/static/js/main.3135521a.chunk.js.map",
+    "runtime-main.js": "/jungle-app/static/js/runtime-main.adf934c2.js",
+    "runtime-main.js.map": "/jungle-app/static/js/runtime-main.adf934c2.js.map",
+    "static/js/2.7685e014.chunk.js": "/jungle-app/static/js/2.7685e014.chunk.js",
+    "static/js/2.7685e014.chunk.js.map": "/jungle-app/static/js/2.7685e014.chunk.js.map",
+    "index.html": "/jungle-app/index.html",
+    "static/css/main.c40e22c2.chunk.css.map": "/jungle-app/static/css/main.c40e22c2.chunk.css.map",
+    "static/js/2.7685e014.chunk.js.LICENSE.txt": "/jungle-app/static/js/2.7685e014.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.adf934c2.js",
+    "static/js/2.7685e014.chunk.js",
+    "static/css/main.c40e22c2.chunk.css",
+    "static/js/main.3135521a.chunk.js"
+  ]
+}
