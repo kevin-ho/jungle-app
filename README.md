@@ -8,4 +8,7 @@ npm i
 
 npm start
 
+![Alt Text](https://raw.github.com/kevin-ho/jungle-app/master/public/img/preview.jpg)
+
+![Alt Text](https://raw.github.com/kevin-ho/jungle-app/master/public/img/preview2.jpg)
 
