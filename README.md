@@ -8,6 +8,8 @@ npm i
 
 npm start
 
+Open on http://localhost:3000 in browser
+
 ![Alt Text](https://raw.github.com/kevin-ho/jungle-app/master/public/img/preview.jpg)
 
 ![Alt Text](https://raw.github.com/kevin-ho/jungle-app/master/public/img/preview2.jpg)
