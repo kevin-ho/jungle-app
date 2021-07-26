@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react"
 import Navbar from "./Navbar"
 import PageBox from "./PageBox"
-import { BrowserRouter as Router } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 import axios from 'axios';
+import ProductDetail from "./ProductDetail";
 
 const PageContainer = () => {
 
     const [fullResults, setResults] = useState({ fullResults: [] });
-    const [products, setProducts] = useState({ products: [] });
+    const [products, setProducts] = useState({ products: [] });   
 
     useEffect(() => {
         const fetchData = async () => {
@@ -28,10 +29,15 @@ const PageContainer = () => {
 
     return (
         <div className="page-container">
-            <Navbar products={products} resetResults={resetResults} />
-            <Router>
-                <PageBox products={products}/> 
-            </Router>
+            <Navbar fullResults={fullResults} products={products} resetResults={resetResults} setProducts={setProducts} />
+            <Switch>
+                <Route exact path="/">
+                    <PageBox products={products} searched={products.length < fullResults.length} resetResults={resetResults} /> 
+                </Route>
+                <Route path="/product/:slug">
+                    <ProductDetail allProducts={fullResults}/>
+                </Route>
+            </Switch>
         </div>
     )
 }

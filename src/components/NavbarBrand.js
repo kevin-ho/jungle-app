@@ -1,10 +1,11 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 
 const NavbarBrand = () => {
   return(
-      <div>
-        <img className="logo" src="/img/temp-logo.png" alt="logo"></img>
-      </div>
+      <NavLink to="/">
+        <img className="logo" src="/img/fake-logo.png" alt="logo"></img>
+      </NavLink>
   )
 }
 export default NavbarBrand
